@@ -55,3 +55,38 @@ const obj4 ={5:"a" , 8:"b"}
 
 const obj5 = {...obj1,...obj2,...regularuser}
 console.log(obj5)
+
+const sduser = [
+    {
+        id:1,
+        mail:"m@gmail.com"
+    },
+    {
+        id:2,
+        mail:"g@gmail.com"
+    },{
+        id:3,
+        mail:"k@gmail.com"
+    },{
+        id:4,
+        mail:"n@gmail.com"
+    }
+]
+
+
+console.log(Object.keys(details));
+console.log(Object.values(details));
+
+
+const course = {
+    sub:"eng",
+    people:"56",
+    sir:"mkkc"
+}
+
+// const {people} = course
+const {people:peo} = course
+
+// console.log(people);
+console.log(peo);
+
