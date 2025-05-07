@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: azure;">
+    <div class="parent">
+        <div class="week">Monday</div>
+        <div class="week">Tuesday</div>
+        <div class="week">Wednesday</div>
+        <div class="week">Thursday</div>
+        <div class="week">Friday</div>
+        <div class="week">Saturday</div>
+    </div>
+</body>
+<script>
+    const par=document.querySelector('.parent')
+    console.log(par);
+    console.log(par.children[1]);
+    console.log(par.children[1].innerHTML);
+
+    for (let i = 0; i < par.children.length; i++) {
+        console.log(par.children[i].innerHTML)
+        
+    }
+    par.children[1].style.color="blue"
+    par.children[1].style="background-color: orange";
+
+    const dayone=document.querySelector(".week")
+    console.log(dayone.innerHTML)
+
+    const div=document.createElement('div')
+    console.log(div);
+    div.className="main"
+    div.id = "mainid"
+    div.setAttribute("title","gen")
+    div.style.backgroundColor="yellow"
+    div.style.padding="15px"
+    div.style.textAlign="center"
+    // const add = div.innerText = "WELOCME Guys"
+    const add = document.createTextNode("Welcome Guys")
+    console.log(add);
+    
+    document.appendChild(add)
+    document.body.append(div)
+
+</script>
+</html>
